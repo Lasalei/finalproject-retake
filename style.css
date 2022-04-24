@@ -1,0 +1,1570 @@
+/*-------------------------------------------- Generell Kode--------------------------------------------*/
+* {
+margin:0;
+padding:0;
+}
+
+
+
+html {
+scroll-behavior:smooth;
+}
+
+h1 {
+font-family:Lato, sans-serif;
+font-weight:900;
+font-style:: #000;
+}
+
+h2,h3,mark {
+font-family:Lato, sans-serif;
+font-weight:700;
+font-style:: #000;
+}
+
+p,li,a {
+font-family:Lato, sans-serif;
+font-weight:400;
+font-style:normal;
+}
+
+h4,.Pkilde2 {
+font-family:Lato, sans-serif;
+font-weight:300;
+font-style:italic;
+}
+/*--------------------------------------------Nav bar--------------------------------------------*/
+.bar {
+background-color:rgb(46,62,41);
+position:fixed;
+top:0;
+width:100vw;
+z-index:15;
+}
+
+.logo {
+float:left;
+margin-top:1vh;
+margin-left:3vw;
+margin-bottom:1vh;
+}
+
+
+
+.cssnav {
+text-align:right;
+}
+
+.menu {
+float:right;
+margin-top:5vh;
+}
+
+.menu a {
+clear:right;
+text-decoration:none;
+font-size:1.5vw;
+color:#FFF;
+text-align:center;
+margin-right:3vw;
+}
+
+.menu a:hover {
+border-bottom: 2px solid white;
+font-size:1.7vw;
+color:#fff;
+transition:.2s ease;
+}
+.menu a.active{
+border-bottom: 2px solid white;
+font-size:1.7vw;
+color:#fff;
+}
+.logo a{
+	font-family:'Love Ya Like A Sister', cursive;
+	font-size: 5vw;
+	clear:right;
+	text-decoration:none;
+	color:#FFF;
+	text-align:center;
+
+}
+
+/*--------------------------------------------Index 1--------------------------------------------*/
+.vindu1 {
+background-image: url(./indexbakgrunn1ny.jpg);
+height:90vh;
+background-size:cover;
+background-position:center;
+overflow:auto;
+border-radius:0 0 50% 0;
+z-index:-1;
+}
+
+.slagord {
+margin-top:45vh;
+padding-left:5vw;
+}
+
+.iphone {
+float:right;
+position:absolute;
+top:27vh;
+left:70%;
+z-index:10;
+}
+
+.iphone img {
+float:right;
+width:60%;
+padding-right:7vw;
+}
+
+#matsvinn {
+	color: black;
+	background-color: transparent;
+
+}
+
+#indexknapp {
+	display:inline-block;
+	margin-top:7vh;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:white;
+	font-size:2vw;
+	letter-spacing:2px;
+	border-radius:3vw;
+	background-color: rgb(50, 61, 43);
+	padding:6px 18px;
+
+}
+
+#indexknapp:hover {
+	background-color:white;
+	color: black;
+	border:1px solid;
+}
+
+
+
+/*--------------------------------------------Index 2--------------------------------------------*/
+
+
+
+
+.starttekst{
+	float: left;
+	margin-left: 15vw;
+	margin-top: 18vh;
+	margin-bottom: 15vh;
+
+}
+
+
+.venstrestart {
+	float: left;
+	width: 35vw;
+
+
+}
+
+.høyrestart {
+
+	float: right;
+	width: 30vw;
+	padding-top: 20vh;
+
+}
+
+.starttekst h2 {
+	float: left;
+	font-size: 2.5vw;
+}
+
+.starttekst p {
+	line-height: 6vh;
+	margin-top: 5vh;
+	float: left;
+	font-size: 1.8vw;
+}
+
+.starttekst img {
+	float: right;
+	width: 100%;
+}
+
+#indeksmarkering{
+	background-color: transparent;
+	color: rgb(50, 61, 43);
+	border-bottom: 3px solid rgb(50,61,43);
+}
+
+
+#myBtn {
+display:none;
+position:fixed;
+bottom:20px;
+right:30px;
+z-index:99;
+border:none;
+outline:none;
+background-color:transparent;
+color:#FEB249;
+cursor:pointer;
+font-size:4vw;
+}
+
+.nedelinjek {
+height:1px;
+width:20vw;
+background:#FFF;
+display:inline-block;
+margin-left:40vw;
+}
+
+/*--------------------------------------------Kontakt oss--------------------------------------------*/
+.vindu3 {
+float:left;
+background-color:rgb(46,62,41);
+padding:0;
+}
+
+.tittelk {
+color:#FFF;
+font-size:2vw;
+}
+
+.kontaktboks1 {
+float:left;
+margin-left:5vw;
+text-align:center;
+}
+
+.kontaktboks1 a {
+font-size:3vw;
+display:block;
+color:#FFF;
+padding-top:.5vw;
+margin:3vw 0;
+}
+
+.kontaktboks2 a {
+text-align:center;
+font-size:2vw;
+display:block;
+color:#FFF;
+padding-top:3vh;
+}
+
+.kontaktboks2 h3 {
+position:center;
+text-align:center;
+color:#FFF;
+font-size:1vw;
+padding:1vw;
+}
+
+/*--------------------------------------------Problemet--------------------------------------------*/
+.Pvindu1{
+background-image:url(./challenge.jpg);
+height:90vh;
+background-size:cover;
+background-position:center;
+overflow:auto;
+background-color:#000;
+z-index:-1;
+
+}
+
+.Pdel1{
+	float: left;
+	margin-left: 15vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+.Ptext1{
+	float: left;
+	width: 35vw;
+}
+.Ptext1 h2{
+	font-size: 3vw;
+}
+.Ptext1 p{
+	line-height: 5.5vh;
+	margin-top: 5vh;
+	float: left;
+	font-size: 1.6vw;
+
+}
+.Pimg1{
+	float: right
+
+}
+.Pimg1 img{
+	width: 100%;
+	padding-top: 19vh;
+
+}
+.Pimg2{
+	float: right
+
+}
+#fn1{
+	margin-top: 0;
+	padding-top: 19vh;
+	width: 100%;
+
+}
+#fn2{
+	margin-top: 0;
+	padding-top: 0;
+	width: 100%;
+}
+
+.Ptext11{
+	float: left;
+	width: 70vw;
+}
+.Ptext11 h2{
+	float: left;
+	font-size: 3vw;
+
+}
+.Ptext11 p{
+	line-height: 5.5vh;
+	margin-top: 5vh;
+	float: left;
+	font-size: 1.6vw;
+
+}
+
+
+
+/*--------------------------------------------Appen--------------------------------------------*/
+.Avindu1 {
+background-image: url(./app_bakgrunn1.jpg);
+height:90vh;
+background-size:cover;
+background-position:center;
+overflow:auto;
+z-index:-1;
+}
+
+
+.Aslagord {
+float:left;
+margin-top:60vh;
+margin-left: 30vw;
+text-align: center;
+color: white;
+letter-spacing: 1vw;
+}
+
+.Adel1{
+	float: left;
+	margin-left: 20vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+
+}
+.Adel1_text{
+	float: left;
+	width: 35vw;
+	}
+.Adel1_img{
+	float: right;
+	width: 15vw;
+}
+
+
+
+.Adel1 h2{
+	font-size: 3vw;
+
+}
+.Adel1 p{
+	line-height: 6vh;
+	margin-top: 5vh;
+	float: left;
+	font-size: 1.6vw;
+
+}
+.Adel1 img{
+	float: right;
+
+	padding-top: 10vh;
+	width: 100%;
+
+
+}
+
+.Avindu2_1{
+	float: left;
+	background-color:#fbeceb;
+
+}
+
+.Avindu2_3{
+	float: left;
+	background-color:#fbeceb;
+
+}
+#F_img{
+	padding-top:20vh;
+}
+
+/*-------------------------------------------------------------Our team--------------------------------------------------------------------*/
+.ourteam1 {
+	background-image: url(./mario-gogh-VBLHICVh-lI-unsplash.jpg);
+	height:90vh;
+	background-size:cover;
+	background-position:center;
+	overflow:auto;
+	z-index:-1;
+}
+
+.Oslagord {
+	text-align:center;
+	padding-left:0;
+	margin-left:5vw;
+}
+.Odel1{
+	float: left;
+	margin-left: 20vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+
+}
+.Odel1_text{
+	float: left;
+	width: 35vw;
+
+}
+
+.Odel1_img{
+	margin-top: 12vh;
+	float: right;
+	width: 20vw;
+}
+
+
+.Odel1 h2{
+	float: left;
+	font-size: 3vw;
+
+}
+.Odel1 p{
+	line-height: 6vh;
+	margin-top: 5vh;
+	float: left;
+	font-size: 1.6vw;
+
+}
+.Odel1 img{
+	float: right;
+	width: 100%;
+}
+.slagordknapp,.Oslagordknapp {
+	display:inline-block;
+	margin-top:7vh;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#000;
+	font-size:2vw;
+	letter-spacing:2px;
+	border-radius:3vw;
+	background-color:#FEB249;
+	padding:6px 18px;
+	}
+
+	.slagordknapp:hover,.Pslagordknapp:hover,.Lslagordknapp:hover,.Oslagordknapp:hover {
+	background-color:#fff;
+	border:1px solid;
+	}
+
+	.Odel2{
+		float: left;
+		margin-left: 10vw;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+
+	}
+	.Oansatt{
+		float: left;
+		margin-top: 10vh;
+		margin-right:4vw;
+		margin-bottom: 5vh;
+	}
+	.Oansatt_bilde{
+		float: left;
+	}
+	.Oansatt_bilde img{
+		float: left;
+		border-radius: 20%;
+		width: 100%;
+	}
+
+	.Oansatt_text{
+		float: left;
+		margin-top: 5vh;
+		margin-left: 10px;
+		text-align: center;
+
+	}
+	.Oansatt_text h2{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1.7vw;
+
+	}
+	.Oansatt_text h3{
+		margin-top: 3vh;
+		font-size: 1.3vw;
+		font-family: Arial, Helvetica, sans-serif;
+
+	}
+
+/*--------------------------------------------Kilder--------------------------------------------*/
+.Khovedboks {
+margin-top:15vh;
+margin-bottom: 10vh;
+}
+
+.Kpunkter {
+margin-left:5vw;
+}
+
+.Kpunkter li {
+background-repeat:no-repeat;
+background-position:left center;
+background-size:40px;
+list-style:none;
+font-size:1.8vw;
+padding:16px 0 16px 84px;
+}
+
+.Ktittel {
+	padding-left: 10vw;
+}
+
+.Knedelinje {
+height:4px;
+width:20vw;
+background:#FEB249;
+display:inline-block;
+}
+
+.Ktittel2 {
+padding-left: 10vw;
+float:left;
+margin-top:3vh;
+}
+
+.Kkildebilde li {
+background-repeat:no-repeat;
+background-position:left center;
+background-size:40px;
+margin-top:5vh;
+list-style:none;
+background-image:url(punkt.png);
+font-size:1.8vw;
+float:left;
+padding:16px 0 16px 84px;
+}
+
+.Kkildebilde img {
+float:right;
+width:10vw;
+}
+
+.Kkildeikoner li {
+background-repeat:no-repeat;
+background-position:left center;
+background-size:40px;
+margin-top:2vh;
+list-style:none;
+background-image:url(punkt.png);
+font-size:1.8vw;
+float:left;
+padding:16px 0 16px 84px;
+}
+
+.Kkildeikoner i {
+float:right;
+font-size:4vw;
+padding-top:4vh;
+}
+
+/*--------------------------------------------Like verdier--------------------------------------------*/
+.menu .kontaktboks1 a:hover,.kontaktboks2 a:hover {
+color:#FEB249;
+}
+
+label,#toggle,.Abildeboks,.Abildeboks3 {
+display:none;
+}
+
+.slagord h1,.Pslagord h1,.Aslagord h1 {
+font-size:4vw;
+padding-left:1vw;
+}
+
+.Pmarkering,.Lmarkinger,#Amarkering {
+color:#FEB249;
+background-color:transparent;
+}
+
+.slagordknapp,.Aslagordknapp {
+display:inline-block;
+margin-top:7vh;
+text-decoration:none;
+text-transform:uppercase;
+color:#000;
+font-size:2vw;
+letter-spacing:2px;
+border-radius:3vw;
+background-color:#FEB249;
+padding:6px 18px;
+}
+
+.slagordknapp:hover,.Pslagordknapp:hover,.Lslagordknapp:hover,.Aslagordknapp:hover {
+background-color:#fff;
+border:1px solid;
+}
+
+.vindu2,.Avindu2 {
+float:left;
+background-size:cover;
+background-position:center;
+}
+
+.knapptboks:hover,.kontaktboks3 a:hover {
+color:rgb(46,62,41);
+background-color:#fff;
+}
+
+.borderhøyre,.bordervenstre {
+height:30vh;
+width:1px;
+background:#FFF;
+display:inline-block;
+float:left;
+margin-top:6vh;
+}
+
+.kontaktboks2,.kontaktboks3,.Pvindu2,.Pstorquote {
+float:left;
+}
+
+.knapptboks3a,.knapptboks3b {
+display:inline-block;
+margin-left:10vw;
+margin-top:10vh;
+text-decoration:none;
+text-transform:uppercase;
+color:rgb(46,62,41);
+font-size:1.5vw;
+letter-spacing:2px;
+border-radius:3vw;
+background-color:#FEB249;
+padding:10px 20px;
+}
+
+.Lvindu1 {
+background-image:linear-gradient(rgba(255,255,255,0.7),rgba(83,211,209,0.7)), url(./white.jpg);
+height:100vh;
+background-size:cover;
+background-position:center;
+overflow:auto;
+background-color:#000;
+z-index:-1;
+}
+
+.Pslagordknapp,.Lslagordknapp {
+display:inline-block;
+margin-left:25vw;
+margin-top:7vh;
+text-decoration:none;
+text-transform:uppercase;
+color:#000;
+font-size:2.5vw;
+letter-spacing:2px;
+border-radius:3vw;
+background-color:#FEB249;
+padding:6px 18px;
+}
+
+.Pnedelinjek,.Lnedelinjek {
+height:2.7px;
+width:20vw;
+background:#FEB249;
+display:inline-block;
+}
+
+.Ptekst p,.Lttekst p,.Ltteekst p,.Lttekst33 p {
+font-size:1.8vw;
+}
+
+.P12 img,.P13 img,.Atablet img {
+width:100%;
+}
+
+.Ptittel3 h1,.Ltteekst h2,.Lttekst33 h3 {
+font-size:3vw;
+}
+
+.Lslagord h1,.Atekstboks1 h1,.Atekstboks2 h1,.Khovedboks h1 {
+font-size:4vw;
+}
+
+.Kkildebilde,.Kkildeikoner {
+background-image:linear-gradient(rgba(83,211,209,0.7),rgba(255,255,255,0.7)), url(./white.jpg);
+margin-left:15vw;
+margin-top:5vh;
+float:left;
+padding-left:1vw;
+border-radius:10px 10px 10px 10px;
+}
+
+[class*="col-"] {
+border:#000 solid px;
+}
+
+.row::after {
+content:"";
+clear:both;
+display:table;
+}
+
+.col-small10 {width:10%;}
+.col-small15 {width:15%;}
+.col-small20 {width:20%;}
+.col-small25 {width:25%;}
+.col-small30 {width:30%;}
+.col-small40 {width:40%;}
+.col-small50 {width:50%;}
+.col-small60 {width:60%;}
+.col-small70 {width:70%;}
+.col-small80 {width:80%;}
+.col-small90 {width:90%;}
+.col-small100 {width:100%;}
+/*-------------------------------------------------------------Mobil breakpoint--------------------------------------------------------------------*/
+@media only screen and (max-width: 600px){
+.col-mob10 {width:10%;}
+.col-mob15 {width:15%;}
+.col-mob25 {width:25%;}
+.col-mob30 {width:30%;}
+.col-mob40 {width:40%;}
+.col-mob50 {width:50%;}
+.col-mob60 {width:60%;}
+.col-mob65 {width:65%;}
+.col-mob70 {width:70%;}
+.col-mob90 {width:90%;}
+.col-mob100{width: 100%;}
+/*--------------------------------------------Nav-bar--------------------------------------------*/
+.logo {
+text-align: center;
+float:left;
+margin-left:30vw;
+margin-top:2vh;
+}
+.logo a {
+font-size: 7vw;
+}
+
+
+
+label {
+display:block;
+cursor:pointer;
+position:absolute;
+font-size:7vw;
+right:6vw;
+top:2vh;
+z-index:100;
+color:#fff;
+}
+
+.menu {
+position:absolute;
+top:-6vh;
+left:-2vw;
+width:102vw;
+height:102vh;
+display:none;
+background-color:rgb(46,62,41);
+z-index:50;
+}
+
+.menu a {
+display:block;
+width:100%;
+color:#FFF;
+font-size:6vw;
+margin-top:10vh;
+margin-bottom:2vh;
+float:left;
+}
+.menu a:hover {
+border-bottom: 0;
+font-size:7vw;
+color:#fff;
+transition:.2s ease;
+}
+.menu a.active{
+border-bottom: 0;
+font-size:8vw;
+color:#fff;
+}
+
+
+input[type="checkbox"]:checked + label {
+color:#FFF;
+}
+
+/*--------------------------------------------Index mobil--------------------------------------------*/
+.vindu1{
+	height: 70vh;
+}
+#indexknapp {
+	display: none;
+}
+.slagord {
+text-align:center;
+padding-left:0;
+margin-left:0;
+}
+
+
+
+
+.starttekst {
+	margin-left: 0;
+}
+
+
+.venstrestart {
+	width: 70vw;
+	margin-left: 15vw;
+	text-align: center;
+}
+
+
+.høyrestart{
+	padding-top: 5vh;
+	margin-top: 0;
+	width: 35vw;
+	margin-right: 18vw;
+}
+
+.starttekst h2{
+	margin-left: 14vw;
+	font-size: 5vw;
+}
+
+
+.starttekst p{
+	font-size: 4vw;
+	line-height: 8vh;
+}
+
+.starttekst img{
+	width: 60vw;
+}
+
+
+
+.vindu3 {
+margin-top:0;
+}
+
+/*--------------------------------------------Kontakt mobil--------------------------------------------*/
+.kontaktboks1 {
+margin-left:10vw;
+}
+
+.kontaktboks1 a {
+font-size:6vw;
+margin:5vh 0;
+}
+
+.kontaktboks3 {
+height:15vh;
+margin-left:25vw;
+align-items:center;
+justify-content:center;
+}
+
+.knapptboks3a {
+margin-left:-2vw;
+margin-top:0;
+margin-bottom:3vh;
+font-size:2vw;
+}
+
+.knapptboks3b {
+float:right;
+font-size:2vw;
+margin:0 -4vw 0 0;
+}
+
+/*--------------------------------------------Problem mobil--------------------------------------------*/
+.Pvindu1{
+	height: 70vh;
+}
+.Pdel1{
+	margin-left: 0;
+}
+.Ptext1,.Ptext11{
+	width: 70vw;
+	margin-left: 15vw;
+	text-align: center;
+
+}
+.Pdel1_img{
+	margin-top: 5vh;
+	width: 35vw;
+	margin-right: 32.5vw;
+
+
+}
+.Pdel1 h2{
+	font-size: 5vw;
+	margin-left: 0;
+}
+.Pdel1 p{
+	font-size: 4vw;
+	line-height: 8vh;
+}
+.Pimg1{
+	margin-left: 20vw;
+	width: 60vw;
+	float: left;
+}
+.Pimg1 img{
+	padding-top: 5vh;
+}
+.Pimg2{
+	margin-top: 5vh;
+	margin-left: 20vw;
+	width: 60vw;
+	float: left;
+}
+#fn1{
+	padding-top: 0;
+	width: 49%;
+
+
+}
+#fn2{
+	padding-top: 0;
+	width: 49%;
+
+}
+
+
+
+/*--------------------------------------------App mobil--------------------------------------------*/
+
+.Avindu1, .ourteam1 {
+	height: 70vh;
+}
+.Aslagord {
+text-align:center;
+padding-left:0;
+margin-left:5vw;
+margin-top: 50vh;
+}
+.Adel1{
+	margin-left: 0;
+}
+.Adel1_text{
+	width: 70vw;
+	margin-left: 15vw;
+	text-align: center;
+
+}
+.Adel1_img{
+	margin-top: 5vh;
+	width: 35vw;
+	margin-right: 32.5vw;
+
+
+}
+
+.Adel1 h2{
+	font-size: 5vw;
+}
+.Adel1 p{
+	font-size: 4vw;
+	line-height: 8vh;
+}
+.Adel1_img img{
+	padding-top: 0vh;
+}
+#F_img{
+	padding-top: 0;
+}
+#Fun_img{
+	padding-top: 0;
+}
+
+
+/*-------------------------------------------OUR TEAM--------------------------------------------------*/
+
+
+.Aslagord{
+	text-align: center;
+	padding-left: 0;
+	margin-left: 5vw;
+}
+.Odel1 {
+	margin-left: 0vw;
+}
+.Odel1_text {
+	width: 70vw;
+	margin-left: 15vw;
+	text-align: center;
+}
+.Odel1_text h2{
+	font-size: 5vw;
+	margin-left: 23vw;
+}
+.Odel1_text p{
+	font-size: 4vw;
+	line-height: 8vh;
+	float: center;
+	margin-top: 5vh;
+}
+.Odel1_img{
+	display: none;
+}
+.Odel2{
+}
+.Odel2 h1{
+	margin-left: 10vw;
+	text-align: center;
+}
+
+.Oansatt{
+	float: left;
+	margin-top: 10vh;
+	margin-right:4vw;
+	margin-bottom: 5vh;
+	margin-left: 20vw;
+
+}
+.Oansatt_bilde{
+	float: left;
+}
+.Oansatt_bilde img{
+	float: left;
+	border-radius: 20%;
+	width: 100%;
+}
+
+.Oansatt_text{
+	margin-top: 5vh;
+	margin-left: 0;
+	text-align: center;
+
+}
+.Oansatt_text h2{
+	font-size: 5vw;
+
+}
+.Oansatt_text h3{
+	margin-top: 3vh;
+	font-size: 4vw;
+
+
+}
+
+/*--------------------------------------------Kilder mobil--------------------------------------------*/
+.Kkildeikoner i {
+font-size:11vw;
+}
+
+.Kkildebilde img {
+width:30vw;
+}
+
+/*--------------------------------------------Felles-verdi mobil--------------------------------------------*/
+
+#envelope,input[type="checkbox"],.iphone,.slagordknapp,.bordervenstre,#myBtn i,.Pslagordknapp,.Lslagordknapp,.Lv2knapp,.Lv3knapp,.Atablet,.Aslagordknapp,.Abildeboks1,.Abildeboks2 img {
+display:none;
+}
+
+.menu a:hover,.menu a.active {
+color:#FEB249;
+}
+
+#toggle:checked + label +.menu,.Abildeboks {
+display:block;
+}
+
+.slagord h1,.Aslagord h1 {
+font-size:7vw;
+padding-left:0;
+}
+
+.tittelk,.kontaktboks2 a,.kontaktboks2 h3,.Ptekst p,.Pkilde2,.Lttekst p,.Ltteekst p,.Lttekst33 p,.Lttekst44 p,.Kpunkter li {
+font-size:4vw;
+}
+
+.Ptittel3 h1,.Ltteekst h2,.Lttekst33 h3 {
+font-size:5.2vw;
+}
+
+.Pquote h2,.Lslagord h1,.Atekstboks1 h1,.Atekstboks2 h1,.Khovedboks h1 {
+font-size:7vw;
+}
+
+.Pbordervenstre,.Pborderhøyre {
+height:25vh;
+}
+
+.Kkildebilde li,.Kkildeikoner li {
+font-size:4.8vw;
+}
+}
+
+/*-------------------------------------------------------------Tablet breakpoint--------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width:790px){
+.col-pad10 {width:10%;}
+.col-pad15 {width:15%;}
+.col-pad20 {width:20%;}
+.col-pad25 {width:25%;}
+.col-pad30 {width:30%;}
+.col-pad35 {width:35%;}
+.col-pad40 {width:40%;}
+.col-pad50 {width:50%;}
+.col-pad60 {width:60%;}
+.col-pad65 {width:65%;}
+.col-pad70 {width:70%;}
+.col-pad80 {width:80%;}
+.col-pad85 {width:85%;}
+.col-pad90 {width:90%;}
+.col-pad100{width:100%;}
+
+/*--------------------------------------------Nav-bar tablet--------------------------------------------*/
+.menu {
+margin-top:4.3vh;
+}
+
+.menu a {
+font-size:2vw;
+}
+
+.menu a.active{
+font-size:2.2vw;
+}
+.menu a:hover {
+font-size:2.2vw;
+
+}
+
+.nav a {
+padding-right:2vw;
+font-size:2.5vw;
+}
+
+/*--------------------------------------------Index tablet--------------------------------------------*/
+
+.starttekst h2{
+	font-size: 3.5vw;
+
+}
+.starttekst p{
+	font-size: 2.5vw;
+
+}
+
+.starttekst{
+	margin-left: 8vw;
+
+}
+
+.høyrestart{
+	width: 40vw;
+	margin-top: 8vh;
+margin-right: 1vw;
+}
+
+.iphone {
+top:30vh;
+}
+
+.iphone img {
+width:90%;
+}
+
+.ttekst {
+float:right;
+padding-top:4vh;
+}
+
+.ttekst h2 {
+font-size:4.5vw;
+}
+
+.ttekst p {
+font-size:2.5vw;
+}
+
+.tlogo {
+float:left;
+margin-top:7vh;
+margin-left:3vw;
+padding-bottom:5vh;
+}
+
+.tlogo img {
+height:20vh;
+}
+
+.knapptboks {
+margin-left:28.7vw;
+font-size:2.5vw;
+}
+/*-------------------------------------------Kontakt oss tablet--------------------------------------------*/
+.vindu3 {
+margin-top:0;
+}
+
+.kontaktboks1 a {
+font-size:4vw;
+padding-top:2.5vw;
+margin:3vw 0;
+}
+
+.kontaktboks2 a {
+font-size:3vw;
+padding-top:2vh;
+margin:1.4vw 0;
+}
+
+.kontaktboks3 a {
+font-size:2.6vw;
+margin-top:9vh;
+}
+
+/*---------------------------------------------Problem tablet--------------------------------------------*/
+
+
+
+.Pdel1 h2{
+	font-size: 3.5vw;
+
+}
+.Pdel1 p{
+	font-size: 2.5vw;
+
+}
+
+.Pdel1{
+	margin-left: 10vw;
+}
+.Ptext1{
+	width: 40vw;
+
+}
+.Pimg1{
+	width: 35vw;
+}
+.Pimg1 img{
+	padding-top: 30vh;
+}
+.Pimg2{
+
+	width: 30vw;
+}
+
+#fn1{
+	margin-top: 0;
+	padding-top: 23vh;
+	width: 100%;
+
+}
+.Ptext11{
+	float: left;
+	width: 80vw;
+}
+
+
+
+/*--------------------------------------------App tablet--------------------------------------------*/
+
+
+.Aslagord {
+text-align:center;
+padding-left:0;
+}
+
+.Aslagord h1 {
+font-size:6vw;
+padding-left:0;
+}
+
+.Aslagordknapp{
+font-size:2vw;
+}
+
+.Adel1 h2{
+	font-size: 3.5vw;
+
+}
+.Adel1 p{
+	font-size: 2.5vw;
+
+}
+
+.Adel1{
+	margin-left: 10vw;
+}
+.Adel1_img{
+	width: 35vw;
+}
+
+.Adel1 img {
+	padding-top: 10vh;
+}
+#F_img{
+	padding-top: 15vh;
+
+}
+#Fun_img{
+	padding-top: 15vh;
+
+}
+
+/* -------------------------------------------- OUR TEAM --------------------------------------------- */
+.Odel1{
+	float: left;
+	margin-left: 0vw;
+}
+.Odel1_text{
+	margin-left: 5vw;
+	float: left;
+	width: 40vw;
+}
+.Odel1_img{
+	margin-top: 12vh;
+	float: left;
+	width: 40vw;
+	margin-left: 5vw;
+}
+.Odel1 h2{
+	font-size: 3.5vw;
+	margin-left: 10vw;
+}
+.Odel1 p{
+	font-size: 2.5vw;
+}
+.Odel1 img{
+	margin-left: 0;
+}
+.Odel2{
+		float: left;
+		margin-left: 10vw;
+}
+.Odel2 h1{
+	text-align: center;
+}
+.Oansatt{
+		float: left;
+		padding: 2vw;
+}
+.Oansatt_bilde{
+		float: left;
+}
+.Oansatt_text h2{
+		font-size: 3.5vw;
+}
+.Oansatt_text h3{
+		font-size: 3vw;
+}
+
+/*--------------------------------------------Kilder tablet--------------------------------------------*/
+.Kkildeikoner i {
+font-size:10vw;
+}
+
+/*--------------------------------------------Felles verdier tablet--------------------------------------------*/
+.slagord h1,.tittelk h1,#myBtn,.Khovedboks h1 {
+font-size:6vw;
+}
+
+.slagordknapp,.Ptekst p,.Ptekst3 p,.Pkilde2,.Pquote h3,.Lttekst p,.Ltteekst p,.Lttekst33 p,.Lttekst44 {
+font-size:3vw;
+}
+
+.tboks,.Pslagord {
+margin-left:5vw;
+}
+
+.Ptittel h1,.Ltittel h1 {
+font-size:5.5vw;
+}
+
+.Ptittel3 h1,.Pquote h2,.Lslagord h1 {
+font-size:5vw;
+}
+
+.Pborderhøyre,.Pbordervenstre {
+height:20vw;
+}
+
+.Lnedelinjek,.Kkildebilde img {
+width:20vw;
+}
+
+.Lv2knapp,.Llinjek2,.Lv3knapp,.Atablet,.Abildeboks1 {
+display:none;
+}
+
+.Lttekst4,.Atekstboks1 li,.Atekstboks1 p {
+font-size:3.5vw;
+}
+
+.Atekstboks1 h1,.Atekstboks2 h1 {
+font-size:7vw;
+}
+
+.Kpunkter li,.Kkildebilde li,.Kkildeikoner li {
+font-size:3.8vw;
+}
+}
+
+/*-------------------------------------------------------------Ekstra breakpoint--------------------------------------------------------------------*/
+@media only screen and (min-width: 790px) and (max-width: 960px){
+
+  /*--------------------------------------------Nav-bar Ekstra--------------------------------------------*/
+.menu {
+margin-top:3.7vh;
+}
+
+.menu a {
+font-size:2vw;
+}
+
+.menu a.active{
+font-size:2.2vw;
+}
+.menu a:hover {
+font-size:2.2vw;
+
+}
+
+.nav a {
+padding-right:2vw;
+font-size:2.5vw;
+}
+
+/*--------------------------------------------Index Ekstra--------------------------------------------*/
+.iphone {
+top:20vh;
+}
+
+.iphone img {
+width:80%;
+}
+
+.knapptboks {
+font-size:2vw;
+margin-left:6vw;
+}
+
+.kontaktboks1 a {
+font-size:3.5vw;
+padding-top:2.5vh;
+}
+
+/*--------------------------------------------Problem Ekstra--------------------------------------------*/
+
+
+
+/*--------------------------------------------App Ekstra--------------------------------------------*/
+
+.Adel1_img{
+
+	width: 20vw;
+}
+
+#F_img{
+padding-top: 15vh;
+}
+
+/*--------------------------------------------Kilder Ekstra--------------------------------------------*/
+.Khovedboks h1 {
+font-size:5vw;
+}
+
+.Kkildeikoner i {
+font-size:9vw;
+}
+
+.Kkildebilde img {
+width:15vw;
+}
+
+/*--------------------------------------------Felles-verdier Ekstra--------------------------------------------*/
+
+.slagord h1,#myBtn,.Pquote h2,.Lslagord h1 {
+font-size:4.5vw;
+}
+
+.slagordknapp,.Pslagordknapp,.kontaktboks2 a,.Lslagordknapp {
+font-size:3vw;
+}
+
+.ttekst h2,.Ptittel {
+font-size:3.3vw;
+}
+
+.ttekst p,.Pkilde,.Atekstboks1 {
+font-size:2vw;
+}
+
+.Ptekst p,.Ptekst3,.Pkilde2 {
+font-size:2.3vw;
+}
+
+.Ptittel3 h1,.Ltteekst h2,.Lttekst33 h3 {
+font-size:3.5vw;
+}
+
+.tittelk,.Ltpunkter,.Lv2knapp,.Lttekst3,.Lttekst4,.Lttekst44,.Atekstboks1 p,.Atekstboks2 p {
+font-size:2.5vw;
+}
+
+.knapptboks3a,.knapptboks3b {
+display:inline-block;
+margin-left:10vw;
+margin-top:10vh;
+text-decoration:none;
+text-transform:uppercase;
+color:rgb(46,62,41);
+font-size:2vw;
+letter-spacing:2px;
+border-radius:3vw;
+background-color:#FEB249;
+padding:10px 20px;
+}
+
+.Lttekst p,.Ltteekst p {
+font-size:2.1vw;
+}
+
+.Lttekst33 p,.Atekstboks1 li {
+font-size:2.2vw;
+}
+
+.Atekstboks1 h1,.Atekstboks2 h1 {
+font-size:4.5vw;
+}
+
+.Kpunkter li,.Kkildebilde li,.Kkildeikoner li {
+font-size:2.8vw;
+}
+}
